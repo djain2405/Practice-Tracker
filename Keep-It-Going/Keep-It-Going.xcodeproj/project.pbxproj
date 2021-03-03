@@ -13,6 +13,7 @@
 		05AF86BA25EB6454005C55D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05AF86B925EB6454005C55D5 /* Preview Assets.xcassets */; };
 		05AF86C525EB6455005C55D5 /* Keep_It_GoingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF86C425EB6455005C55D5 /* Keep_It_GoingTests.swift */; };
 		05AF86D025EB6455005C55D5 /* Keep_It_GoingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF86CF25EB6455005C55D5 /* Keep_It_GoingUITests.swift */; };
+		05D732DD25EF60B600CDA181 /* ClassDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D732DC25EF60B600CDA181 /* ClassDropDownView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		05AF86CB25EB6455005C55D5 /* Keep-It-GoingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Keep-It-GoingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05AF86CF25EB6455005C55D5 /* Keep_It_GoingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keep_It_GoingUITests.swift; sourceTree = "<group>"; };
 		05AF86D125EB6455005C55D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05D732DC25EF60B600CDA181 /* ClassDropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDropDownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				05AF86B625EB6454005C55D5 /* Assets.xcassets */,
 				05AF86BB25EB6454005C55D5 /* Info.plist */,
 				05AF86B825EB6454005C55D5 /* Preview Content */,
+				05D732DC25EF60B600CDA181 /* ClassDropDownView.swift */,
 			);
 			path = "Keep-It-Going";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05AF86B525EB6453005C55D5 /* ContentView.swift in Sources */,
+				05D732DD25EF60B600CDA181 /* ClassDropDownView.swift in Sources */,
 				05AF86B325EB6453005C55D5 /* Keep_It_GoingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

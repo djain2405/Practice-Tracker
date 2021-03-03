@@ -14,7 +14,6 @@ struct ContentView: View {
     @State private var password: String = ""
 
 
-
     var body: some View {
         NavigationView {
             VStack(alignment: HorizontalAlignment.center){
@@ -51,6 +50,7 @@ struct ContentView: View {
                 .padding(5)
                 .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 .overlay(RoundedRectangle(cornerRadius: 24).stroke(Color.blue, lineWidth: 2))
+                ClassDropDownView()
                 Spacer()
                 Button(action: {
                     print("Sign up!")
