@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct Keep_It_GoingApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

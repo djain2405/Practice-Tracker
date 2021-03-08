@@ -51,6 +51,7 @@ struct ContentView: View {
                 .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 .overlay(RoundedRectangle(cornerRadius: 24).stroke(Color.blue, lineWidth: 2))
                 ClassDropDownView()
+                    .padding(.top, 24)
                 Spacer()
                 Button(action: {
                     print("Sign up!")

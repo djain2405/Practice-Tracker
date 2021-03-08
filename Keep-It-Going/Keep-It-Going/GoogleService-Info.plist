@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>192608566288-e9s505g975jrv9k9kdp4tijojtmavoin.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.192608566288-e9s505g975jrv9k9kdp4tijojtmavoin</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCYBx5-CcC6gi7E_6p7HtuHN1pewx-6Alg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>192608566288</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.practice.tracker.Keep-It-Going</string>
+	<key>PROJECT_ID</key>
+	<string>keep-it-going-b04dc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>keep-it-going-b04dc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:192608566288:ios:771d3184391da89d2dde95</string>
+</dict>
+</plist>
