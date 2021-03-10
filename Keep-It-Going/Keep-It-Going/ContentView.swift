@@ -12,6 +12,9 @@ struct ContentView: View {
     @State private var name: String = ""
     @State private var userName: String = ""
     @State private var password: String = ""
+    
+    @State var practiceTimerView = false
+
 
 
     var body: some View {
@@ -53,16 +56,23 @@ struct ContentView: View {
                 ClassDropDownView()
                     .padding(.top, 24)
                 Spacer()
-                Button(action: {
-                    print("Sign up!")
-                }, label: {
-                    Text("Save")
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .font(.title3)
-                        .cornerRadius(32)
-                })
+                NavigationLink(
+                    destination: PracticeTimerView(), isActive: $practiceTimerView){
+                    Button(action: {
+                        withAnimation{
+                            self.practiceTimerView.toggle()
+                        }
+                        print("Sign up!")
+                    }, label: {
+                        Text("Save")
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .font(.title3)
+                            .cornerRadius(32)
+                    })
+                }
+                
                 Spacer()
                 
             }

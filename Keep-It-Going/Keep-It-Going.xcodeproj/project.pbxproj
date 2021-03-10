@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		053888D625F5F0D80001BCF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 053888D525F5F0D80001BCF5 /* GoogleService-Info.plist */; };
 		053888E625F5F38F0001BCF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053888E525F5F38F0001BCF5 /* AppDelegate.swift */; };
+		0543622C25F869EF0095D38C /* PracticeTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0543622B25F869EF0095D38C /* PracticeTimerView.swift */; };
 		05AF86B325EB6453005C55D5 /* Keep_It_GoingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF86B225EB6453005C55D5 /* Keep_It_GoingApp.swift */; };
 		05AF86B525EB6453005C55D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF86B425EB6453005C55D5 /* ContentView.swift */; };
 		05AF86B725EB6454005C55D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05AF86B625EB6454005C55D5 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		053888D525F5F0D80001BCF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		053888E525F5F38F0001BCF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0543622B25F869EF0095D38C /* PracticeTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTimerView.swift; sourceTree = "<group>"; };
 		05AF86AF25EB6453005C55D5 /* Keep-It-Going.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keep-It-Going.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05AF86B225EB6453005C55D5 /* Keep_It_GoingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keep_It_GoingApp.swift; sourceTree = "<group>"; };
 		05AF86B425EB6453005C55D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				05AF86BB25EB6454005C55D5 /* Info.plist */,
 				05AF86B825EB6454005C55D5 /* Preview Content */,
 				05D732DC25EF60B600CDA181 /* ClassDropDownView.swift */,
+				0543622B25F869EF0095D38C /* PracticeTimerView.swift */,
 			);
 			path = "Keep-It-Going";
 			sourceTree = "<group>";
@@ -166,7 +169,6 @@
 				7133CD73FE0FDF4BB6FE00C2 /* Pods-Keep-It-GoingTests.debug.xcconfig */,
 				2A57C44B1E6EDEB707F8596A /* Pods-Keep-It-GoingTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -422,6 +424,7 @@
 				05AF86B525EB6453005C55D5 /* ContentView.swift in Sources */,
 				05D732DD25EF60B600CDA181 /* ClassDropDownView.swift in Sources */,
 				05AF86B325EB6453005C55D5 /* Keep_It_GoingApp.swift in Sources */,
+				0543622C25F869EF0095D38C /* PracticeTimerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
