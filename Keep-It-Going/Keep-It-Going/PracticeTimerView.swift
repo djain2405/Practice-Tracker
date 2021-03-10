@@ -7,7 +7,12 @@
 
 import SwiftUI
 
+let SIZE_ICON = CGFloat(144)
+
 struct PracticeTimerView: View {
+    
+    @State var timerIsPaused: Bool = true
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -16,26 +21,38 @@ struct PracticeTimerView: View {
                     .font(.title)
                 Spacer()
                 VStack {
-                    Button(action: {
-                        print("Start Timer")
-                    }, label: {
-                        Image("Play")
-                            .resizable()
-                            .frame(width: 64, height: 64, alignment: .center)
-                    })
+                    if(timerIsPaused) {
+                        Button(action: {
+                            self.timerIsPaused.toggle()
+                            print("Start Timer")
+                        }, label: {
+                            Image("Play")
+                                .resizable()
+                                .frame(width: 64, height: 64, alignment: .center)
+                        })
+                    } else {
+                        Button(action: {
+                            self.timerIsPaused.toggle()
+                            print("Pause Timer")
+                        }, label: {
+                            Image("Pause")
+                                .resizable()
+                                .frame(width: 64, height: 64, alignment: .center)
+                        })
+                    }
                 }
                 .padding(48)
-                .cornerRadius(100)
+                .cornerRadius(SIZE_ICON)
                 .background(
                 ZStack {
                     Circle()
                         .shadow(color: .white, radius: 10, x: -10, y: -10)
                         .shadow(color: .black, radius: 10, x: 10, y: 10)
                         .blendMode(.overlay)
-                        .frame(width: 220,height:220)
+                        .frame(width: SIZE_ICON, height: SIZE_ICON)
                     Circle()
                         .fill(Color.blue)
-                        .frame(width: 220,height:220)
+                        .frame(width: SIZE_ICON, height: SIZE_ICON)
                 }
             )
                 Spacer()
