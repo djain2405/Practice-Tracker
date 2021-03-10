@@ -12,6 +12,10 @@ let SIZE_ICON = CGFloat(144)
 struct PracticeTimerView: View {
     
     @State var timerIsPaused: Bool = true
+    @State var secs: Int = 0
+    @State var mins: Int = 0
+    @State var timer: Timer? = nil
+
     
     var body: some View {
         NavigationView {
@@ -24,6 +28,7 @@ struct PracticeTimerView: View {
                     if(timerIsPaused) {
                         Button(action: {
                             self.timerIsPaused.toggle()
+                            startTimer()
                             print("Start Timer")
                         }, label: {
                             Image("Play")
@@ -33,6 +38,7 @@ struct PracticeTimerView: View {
                     } else {
                         Button(action: {
                             self.timerIsPaused.toggle()
+                            stopTimer()
                             print("Pause Timer")
                         }, label: {
                             Image("Pause")
@@ -55,6 +61,12 @@ struct PracticeTimerView: View {
                         .frame(width: SIZE_ICON, height: SIZE_ICON)
                 }
             )
+                Text(String(format: "%02d", self.mins)+":"+String(format: "%02d", self.secs))
+                    .bold()
+                    .padding()
+                    .foregroundColor(.blue)
+                    .font(.title)
+                    
                 Spacer()
                 Button(action: {
                     print("Continue")
@@ -73,6 +85,23 @@ struct PracticeTimerView: View {
             .padding()
             .padding(.bottom, 32)
         }
+    }
+    
+    func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { tempTimer in
+        
+            if self.secs ==  59 {
+                self.secs = 0
+                self.mins = self.mins + 1
+            } else {
+                self.secs = self.secs + 1
+            }
+      }
+    }
+    
+    func stopTimer(){
+      timer?.invalidate()
+      timer = nil
     }
 }
 
