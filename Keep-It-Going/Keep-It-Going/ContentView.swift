@@ -66,10 +66,12 @@ struct ContentView: View {
                     }, label: {
                         Text("Save")
                             .padding()
+                            .padding(.leading, 24)
+                            .padding(.trailing, 24)
                             .background(Color.blue)
                             .foregroundColor(.white)
                             .font(.title3)
-                            .cornerRadius(32)
+                            .cornerRadius(16)
                     })
                 }
                 

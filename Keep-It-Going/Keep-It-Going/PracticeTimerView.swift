@@ -12,12 +12,11 @@ let SIZE_ICON = CGFloat(144)
 struct PracticeTimerView: View {
     
     @State var timerIsPaused: Bool = true
-    @State var secs: Int = 0
-    @State var mins: Int = 0
     @State var timer: Timer? = nil
     @State var practiceEntryView = false
-
     
+    @ObservedObject var practiceTime = PracticeTime()
+
     var body: some View {
             VStack {
                 Text("Happy Practicing!")
@@ -61,7 +60,7 @@ struct PracticeTimerView: View {
                         .frame(width: SIZE_ICON, height: SIZE_ICON)
                 }
             )
-                Text(String(format: "%02d", self.mins)+":"+String(format: "%02d", self.secs))
+                Text(String(format: "%02d", self.practiceTime.minutes)+":"+String(format: "%02d", self.practiceTime.seconds))
                     .bold()
                     .padding()
                     .foregroundColor(.blue)
@@ -96,11 +95,11 @@ struct PracticeTimerView: View {
     func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { tempTimer in
         
-            if self.secs ==  59 {
-                self.secs = 0
-                self.mins = self.mins + 1
+            if self.practiceTime.seconds ==  59 {
+                self.practiceTime.seconds = 0
+                self.practiceTime.minutes = self.practiceTime.minutes + 1
             } else {
-                self.secs = self.secs + 1
+                self.practiceTime.seconds = self.practiceTime.seconds + 1
             }
       }
     }
