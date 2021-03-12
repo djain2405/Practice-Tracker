@@ -15,10 +15,10 @@ struct PracticeTimerView: View {
     @State var secs: Int = 0
     @State var mins: Int = 0
     @State var timer: Timer? = nil
+    @State var practiceEntryView = false
 
     
     var body: some View {
-        NavigationView {
             VStack {
                 Text("Happy Practicing!")
                     .bold()
@@ -68,7 +68,12 @@ struct PracticeTimerView: View {
                     .font(.title)
                     
                 Spacer()
+                NavigationLink(
+                    destination: PracticeSessionEntryView(), isActive: $practiceEntryView){
                 Button(action: {
+                    withAnimation{
+                        self.practiceEntryView.toggle()
+                    }
                     print("Continue")
                 }, label: {
                     Text("Done")
@@ -81,11 +86,12 @@ struct PracticeTimerView: View {
                             .fill(Color.blue)
                 )
                 .foregroundColor(.white)
+                }
             }
             .padding()
             .padding(.bottom, 32)
         }
-    }
+    
     
     func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { tempTimer in
