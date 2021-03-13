@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct SaveCancelContainerView: View {
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    @State private var showingAlert = false
+
     var body: some View {
         HStack{
             Button(action: {
-                print("Continue")
+//                self.mode.wrappedValue.dismiss()
+                showingAlert = true
             }, label: {
                 Text("Cancel")
             })
@@ -22,6 +26,15 @@ struct SaveCancelContainerView: View {
                         .fill(Color.blue)
             )
             .foregroundColor(.white)
+            .alert(isPresented:$showingAlert) {
+                Alert(
+                    title: Text("Are you sure you want to delete this session?"),
+                    primaryButton: .destructive(Text("Delete")) {
+                        print("Deleting...")
+                    },
+                    secondaryButton: .cancel(Text("Dismiss"))
+                )
+            }
             Button(action: {
                 print("Continue")
             }, label: {
