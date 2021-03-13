@@ -11,7 +11,6 @@ struct PracticeSessionEntryView: View {
     
     @State var sessionName:String = ""
     @State var sessionDetails: String = ""
-    @ObservedObject var practiceTime = PracticeTime()
     
     var body: some View {
         VStack {
@@ -29,14 +28,7 @@ struct PracticeSessionEntryView: View {
                 .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.blue, lineWidth: 2))
             Spacer()
                 .frame(height: 24)
-            Text("Duration")
-                .bold()
-                .font(.body)
-            Spacer()
-                .frame(height: 8)
-            Text(String(format: "%02d", self.practiceTime.minutes)+":"+String(format: "%02d", self.practiceTime.seconds))
-                .bold()
-                .font(.title)
+            DurationView()
             Spacer()
                 .frame(height: 24)
             Text("Enter notes here")
@@ -47,9 +39,12 @@ struct PracticeSessionEntryView: View {
                 .padding()
                 .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.blue, lineWidth: 2))
                 .frame(height: 144)
+            Spacer()
+            SaveCancelContainerView()
         }
         .padding()
-        Spacer()
+
+        
     }
 }
 
