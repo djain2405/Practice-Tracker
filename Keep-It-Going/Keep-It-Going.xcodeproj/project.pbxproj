@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052543BF25FDEDF1009A6D28 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052543BE25FDEDF1009A6D28 /* BarChartView.swift */; };
 		053888D625F5F0D80001BCF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 053888D525F5F0D80001BCF5 /* GoogleService-Info.plist */; };
 		053888E625F5F38F0001BCF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053888E525F5F38F0001BCF5 /* AppDelegate.swift */; };
 		0543622C25F869EF0095D38C /* PracticeTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0543622B25F869EF0095D38C /* PracticeTimerView.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		052543BE25FDEDF1009A6D28 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		053888D525F5F0D80001BCF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		053888E525F5F38F0001BCF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0543622B25F869EF0095D38C /* PracticeTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTimerView.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				05A542AF25FB11AB00185321 /* PracticeSessionEntryView.swift */,
 				05A542EB25FC781000185321 /* DurationView.swift */,
 				05A542F025FC798100185321 /* SaveCancelContainerView.swift */,
+				052543BE25FDEDF1009A6D28 /* BarChartView.swift */,
 			);
 			path = "Keep-It-Going";
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				05A542E725FBCADD00185321 /* PracticeTime.swift in Sources */,
 				05D732DD25EF60B600CDA181 /* ClassDropDownView.swift in Sources */,
 				05AF86B325EB6453005C55D5 /* Keep_It_GoingApp.swift in Sources */,
+				052543BF25FDEDF1009A6D28 /* BarChartView.swift in Sources */,
 				05A542EC25FC781000185321 /* DurationView.swift in Sources */,
 				0543622C25F869EF0095D38C /* PracticeTimerView.swift in Sources */,
 			);

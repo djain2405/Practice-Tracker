@@ -10,6 +10,8 @@ import SwiftUI
 struct SaveCancelContainerView: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @State private var showingAlert = false
+    @State var chartView = false
+
 
     var body: some View {
         HStack{
@@ -35,7 +37,12 @@ struct SaveCancelContainerView: View {
                     secondaryButton: .cancel(Text("Dismiss"))
                 )
             }
+            NavigationLink(
+                destination: BarChartView(), isActive: $chartView){
             Button(action: {
+                withAnimation{
+                    self.chartView.toggle()
+                }
                 print("Continue")
             }, label: {
                 Text("Save")
@@ -46,6 +53,7 @@ struct SaveCancelContainerView: View {
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
                         .fill(Color.blue)
             )
+            }
             .foregroundColor(.white)
         }
         .padding()
