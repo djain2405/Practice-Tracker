@@ -10,7 +10,8 @@ target 'Keep-It-Going' do
 pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Analytics'
-pod 'Firebase/Database'
+pod 'Firebase/Firestore'
+pod 'FirebaseFirestoreSwift', '~> 7.0-beta'
 
   target 'Keep-It-GoingTests' do
     inherit! :search_paths
