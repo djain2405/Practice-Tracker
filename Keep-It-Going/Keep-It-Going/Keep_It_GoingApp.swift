@@ -13,7 +13,7 @@ struct Keep_It_GoingApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(userViewModel: UserViewModel())
         }
     }
 }

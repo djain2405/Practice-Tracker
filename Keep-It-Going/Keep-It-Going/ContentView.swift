@@ -12,7 +12,9 @@ struct ContentView: View {
     @State private var name: String = ""
     @State private var userName: String = ""
     @State private var password: String = ""
-    
+    @State private var confirmpassword: String = ""
+    @ObservedObject var userViewModel: UserViewModel
+
     @State var practiceTimerView = false
 
 
@@ -32,7 +34,7 @@ struct ContentView: View {
                 HStack {
                     Image(systemName: "person.crop.circle.fill")
                         .foregroundColor(.gray).padding(15)
-                    TextField("Enter a username", text: $name)
+                    TextField("Enter a username", text: $userName)
                 }
                 .padding(5)
                 .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
@@ -40,7 +42,7 @@ struct ContentView: View {
                 HStack {
                     Image(systemName: "lock")
                         .foregroundColor(.gray).padding(15)
-                    TextField("Enter a password", text: $name)
+                    TextField("Enter a password", text: $password)
                 }
                 .padding(5)
                 .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
@@ -48,7 +50,7 @@ struct ContentView: View {
                 HStack {
                     Image(systemName: "lock")
                         .foregroundColor(.gray).padding(15)
-                    TextField("Confirm password", text: $name)
+                    TextField("Confirm password", text: $confirmpassword)
                 }
                 .padding(5)
                 .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
@@ -58,12 +60,7 @@ struct ContentView: View {
                 Spacer()
                 NavigationLink(
                     destination: PracticeTimerView(), isActive: $practiceTimerView){
-                    Button(action: {
-                        withAnimation{
-                            self.practiceTimerView.toggle()
-                        }
-                        print("Sign up!")
-                    }, label: {
+                    Button(action: addUser, label: {
                         Text("Save")
                             .padding()
                             .padding(.leading, 24)
@@ -80,11 +77,20 @@ struct ContentView: View {
             }
             .padding()
         }
+
+    }
+    
+    private func addUser(){
+            let user = UserSession(name: name, username: userName, password: password)
+            userViewModel.add(user)
+            withAnimation{
+                self.practiceTimerView.toggle()
+            }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(userViewModel: UserViewModel())
     }
 }
