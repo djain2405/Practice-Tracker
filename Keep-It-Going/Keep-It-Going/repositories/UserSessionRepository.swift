@@ -20,7 +20,7 @@ class UserRepository: ObservableObject {
     func addUser(_ user: UserSession){
         do {
             let newUser = user
-          _ = try store.collection(path).addDocument(from: newUser)
+            _ = try store.collection(path).document(newUser.username).setData(from: newUser)
         } catch {
           fatalError("Unable to add card: \(error.localizedDescription).")
         }
