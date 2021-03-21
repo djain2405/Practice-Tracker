@@ -8,7 +8,8 @@
 import Foundation
 import FirebaseFirestoreSwift
 
-struct UserSession {
+struct UserSession: Codable {
+    @DocumentID var id: String?
     var name: String
     var username: String
     var password: String

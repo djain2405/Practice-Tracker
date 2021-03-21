@@ -16,5 +16,15 @@ class UserRepository: ObservableObject {
     private let store = Firestore.firestore()
     
     @Published var users: [UserSession] = []
+    
+    func addUser(_ user: UserSession){
+        do {
+            let newUser = user
+          _ = try store.collection(path).addDocument(from: newUser)
+        } catch {
+          fatalError("Unable to add card: \(error.localizedDescription).")
+        }
+      }
+
 
 }
