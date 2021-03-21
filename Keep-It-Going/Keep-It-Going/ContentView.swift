@@ -42,7 +42,7 @@ struct ContentView: View {
                 HStack {
                     Image(systemName: "lock")
                         .foregroundColor(.gray).padding(15)
-                    TextField("Enter a password", text: $password)
+                    SecureField("Enter a password", text: $password)
                 }
                 .padding(5)
                 .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
@@ -50,7 +50,7 @@ struct ContentView: View {
                 HStack {
                     Image(systemName: "lock")
                         .foregroundColor(.gray).padding(15)
-                    TextField("Confirm password", text: $confirmpassword)
+                    SecureField("Confirm password", text: $confirmpassword)
                 }
                 .padding(5)
                 .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
