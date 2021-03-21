@@ -146,6 +146,7 @@
 		05AF86B125EB6453005C55D5 /* Keep-It-Going */ = {
 			isa = PBXGroup;
 			children = (
+				05DFC90726071F8E004021F9 /* View */,
 				05DFC8D126070D0C004021F9 /* ViewModels */,
 				05D7F829260088D2002B4F92 /* repositories */,
 				05A542E525FBCA9300185321 /* model */,
@@ -155,12 +156,6 @@
 				05AF86B625EB6454005C55D5 /* Assets.xcassets */,
 				05AF86BB25EB6454005C55D5 /* Info.plist */,
 				05AF86B825EB6454005C55D5 /* Preview Content */,
-				05D732DC25EF60B600CDA181 /* ClassDropDownView.swift */,
-				0543622B25F869EF0095D38C /* PracticeTimerView.swift */,
-				05A542AF25FB11AB00185321 /* PracticeSessionEntryView.swift */,
-				05A542EB25FC781000185321 /* DurationView.swift */,
-				05A542F025FC798100185321 /* SaveCancelContainerView.swift */,
-				052543BE25FDEDF1009A6D28 /* BarChartView.swift */,
 			);
 			path = "Keep-It-Going";
 			sourceTree = "<group>";
@@ -205,6 +200,19 @@
 				05DFC8D226070D22004021F9 /* UserViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		05DFC90726071F8E004021F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05D732DC25EF60B600CDA181 /* ClassDropDownView.swift */,
+				0543622B25F869EF0095D38C /* PracticeTimerView.swift */,
+				05A542AF25FB11AB00185321 /* PracticeSessionEntryView.swift */,
+				05A542EB25FC781000185321 /* DurationView.swift */,
+				05A542F025FC798100185321 /* SaveCancelContainerView.swift */,
+				052543BE25FDEDF1009A6D28 /* BarChartView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		26F7FDE008E2BD2AD2F7BA17 /* Pods */ = {
