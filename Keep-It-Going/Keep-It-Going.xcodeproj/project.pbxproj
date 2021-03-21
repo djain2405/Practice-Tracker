@@ -25,6 +25,7 @@
 		05D7F82526008719002B4F92 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D7F82426008719002B4F92 /* UserSession.swift */; };
 		05D7F82B260089A9002B4F92 /* UserSessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D7F82A260089A9002B4F92 /* UserSessionRepository.swift */; };
 		05DFC8D326070D22004021F9 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DFC8D226070D22004021F9 /* UserViewModel.swift */; };
+		05DFC912260721AE004021F9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DFC911260721AE004021F9 /* SignUpView.swift */; };
 		6517662EFDB81F61B192F5C1 /* Pods_Keep_It_Going_Keep_It_GoingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F5B9022B4E32F0770141C9 /* Pods_Keep_It_Going_Keep_It_GoingUITests.framework */; };
 		94B2034C5E844A0A6AC042E9 /* Pods_Keep_It_GoingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1396E2F183D0FAF83F1248 /* Pods_Keep_It_GoingTests.framework */; };
 		E8C1362B60633E05B2F130A5 /* Pods_Keep_It_Going.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2620A4A147FBF9259DCACED9 /* Pods_Keep_It_Going.framework */; };
@@ -72,6 +73,7 @@
 		05D7F82426008719002B4F92 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		05D7F82A260089A9002B4F92 /* UserSessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionRepository.swift; sourceTree = "<group>"; };
 		05DFC8D226070D22004021F9 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		05DFC911260721AE004021F9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		2620A4A147FBF9259DCACED9 /* Pods_Keep_It_Going.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keep_It_Going.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A57C44B1E6EDEB707F8596A /* Pods-Keep-It-GoingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep-It-GoingTests.release.xcconfig"; path = "Target Support Files/Pods-Keep-It-GoingTests/Pods-Keep-It-GoingTests.release.xcconfig"; sourceTree = "<group>"; };
 		7133CD73FE0FDF4BB6FE00C2 /* Pods-Keep-It-GoingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep-It-GoingTests.debug.xcconfig"; path = "Target Support Files/Pods-Keep-It-GoingTests/Pods-Keep-It-GoingTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				05A542EB25FC781000185321 /* DurationView.swift */,
 				05A542F025FC798100185321 /* SaveCancelContainerView.swift */,
 				052543BE25FDEDF1009A6D28 /* BarChartView.swift */,
+				05DFC911260721AE004021F9 /* SignUpView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				05D7F82526008719002B4F92 /* UserSession.swift in Sources */,
 				05AF86B325EB6453005C55D5 /* Keep_It_GoingApp.swift in Sources */,
 				05DFC8D326070D22004021F9 /* UserViewModel.swift in Sources */,
+				05DFC912260721AE004021F9 /* SignUpView.swift in Sources */,
 				052543BF25FDEDF1009A6D28 /* BarChartView.swift in Sources */,
 				05A542EC25FC781000185321 /* DurationView.swift in Sources */,
 				0543622C25F869EF0095D38C /* PracticeTimerView.swift in Sources */,
