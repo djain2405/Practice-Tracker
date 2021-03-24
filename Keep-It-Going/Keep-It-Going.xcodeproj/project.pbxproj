@@ -11,6 +11,7 @@
 		053888D625F5F0D80001BCF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 053888D525F5F0D80001BCF5 /* GoogleService-Info.plist */; };
 		053888E625F5F38F0001BCF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053888E525F5F38F0001BCF5 /* AppDelegate.swift */; };
 		0543622C25F869EF0095D38C /* PracticeTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0543622B25F869EF0095D38C /* PracticeTimerView.swift */; };
+		056CAD36260AED6B00179DDE /* SavedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056CAD35260AED6B00179DDE /* SavedUser.swift */; };
 		05A542B025FB11AB00185321 /* PracticeSessionEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A542AF25FB11AB00185321 /* PracticeSessionEntryView.swift */; };
 		05A542E725FBCADD00185321 /* PracticeTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A542E625FBCADD00185321 /* PracticeTime.swift */; };
 		05A542EC25FC781000185321 /* DurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A542EB25FC781000185321 /* DurationView.swift */; };
@@ -53,6 +54,7 @@
 		053888D525F5F0D80001BCF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		053888E525F5F38F0001BCF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0543622B25F869EF0095D38C /* PracticeTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTimerView.swift; sourceTree = "<group>"; };
+		056CAD35260AED6B00179DDE /* SavedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUser.swift; sourceTree = "<group>"; };
 		05A542AF25FB11AB00185321 /* PracticeSessionEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionEntryView.swift; sourceTree = "<group>"; };
 		05A542E625FBCADD00185321 /* PracticeTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTime.swift; sourceTree = "<group>"; };
 		05A542EB25FC781000185321 /* DurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				05A542E625FBCADD00185321 /* PracticeTime.swift */,
 				05D7F82426008719002B4F92 /* UserSession.swift */,
+				056CAD35260AED6B00179DDE /* SavedUser.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -493,6 +496,7 @@
 				052543BF25FDEDF1009A6D28 /* BarChartView.swift in Sources */,
 				05A542EC25FC781000185321 /* DurationView.swift in Sources */,
 				0543622C25F869EF0095D38C /* PracticeTimerView.swift in Sources */,
+				056CAD36260AED6B00179DDE /* SavedUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

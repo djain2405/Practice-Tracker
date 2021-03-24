@@ -14,8 +14,10 @@ struct SignUpView: View {
     @State private var password: String = ""
     @State private var confirmpassword: String = ""
     @ObservedObject var userViewModel: UserViewModel
+    @ObservedObject var savedUser = SavedUser()
 
     @State var practiceTimerView = false
+    
     var body: some View {
         VStack(alignment: HorizontalAlignment.center){
             Spacer()
@@ -76,6 +78,9 @@ struct SignUpView: View {
     private func addUser(){
             let user = UserSession(name: name, username: userName, password: password)
             userViewModel.add(user)
+            self.savedUser.username = userName
+            self.savedUser.password = password
+        
             withAnimation{
                 self.practiceTimerView.toggle()
             }

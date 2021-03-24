@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var savedUser = SavedUser()
     
     var body: some View {
         NavigationView {
-            SignUpView(userViewModel: UserViewModel())
-            .padding()
+            if(savedUser.username.isEmpty && savedUser.password.isEmpty) {
+                SignUpView(userViewModel: UserViewModel())
+                    .padding()
+            } else {
+                Text("Hello World!")
+            }
+            
+            
         }
     }
 }
